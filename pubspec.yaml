@@ -1,0 +1,17 @@
+name: one
+version: 0.0.1
+description: A zero project
+main: lib/main.dart
+publish_to: none
+
+environment:
+  sdk: '>3.0.0'
+dependencies:
+  zero:
+    path: ../
+  postgres: ^2.6.1
+  dart_jsonwebtoken: ^2.7.1
+  crypto: ^3.0.1
+dev_dependencies:
+  lint: ^2.0.0
+  test: ^1.21.0
