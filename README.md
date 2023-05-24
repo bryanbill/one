@@ -33,6 +33,24 @@ cd one
 dart pub get
 ```
 
-3. Create a `.env` file
+3. Copy `.env.example` to `.env` and fill in the required values
 
 ```bash
+cp .env.example .env
+```
+
+4. Import the database schema in `data/one.sql`
+
+```bash
+psql -U postgres -d one -f data/one.sql
+```
+
+5. Run the server
+
+```bash
+zero run
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
